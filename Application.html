@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styleApplication.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Job Application Form Container -->
+    <form class="application-form">
+        <h2>Job Application Form</h2>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <label for="position">Position Applying For</label>
+        <select id="position">
+            <option>Web Developer</option>
+            <option>Graphic Designer</option>
+            <option>Data Analyst</option>
+            <option>Customer Service Representative</option>
+        </select>
+
+        <label for="experience">Work Experience</label>
+        <textarea id="experience" rows="4" placeholder="Describe your work experience"></textarea>
+
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume">
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <!-- Aside Guideline Section -->
+    <aside class="guidelines-sidebar">
+        <h3>Application Guidelines</h3>
+        <ul>
+            <li>Complete all required fields.</li>
+            <li>Use a valid email address.</li>
+            <li>Upload your latest resume.</li>
+            <li>Review your information before submitting.</li>
+            <li>Only shortlisted applicants will be contacted.</li>
+        </ul>
+
+        <h3>Office Hours</h3>
+        <p>Monday – Friday</p>
+        <p>8:00 AM – 5:00 PM</p>
+    </aside>
+
+</div>
+
+</body>
+</html>
