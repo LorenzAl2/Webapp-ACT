@@ -1,0 +1,145 @@
+/* General Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Flex Container Layout */
+.container {
+    display: flex;
+    background-color: #ffffff;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures inner colored content respects border radius */
+}
+
+/* Left Form Body styling */
+.application-form {
+    flex: 2;
+    padding: 40px;
+}
+
+.application-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.application-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444444;
+}
+
+/* Text Fields and Dropdowns */
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form input[type="tel"],
+.application-form select,
+.application-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus {
+    border-color: #007bff;
+}
+
+.application-form textarea {
+    resize: vertical;
+}
+
+/* File Upload input adjustment */
+.application-form input[type="file"] {
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+}
+
+/* Submit blue button action state */
+.application-form button {
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.2s;
+}
+
+.application-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Right Blue Informational Sidebar */
+.guidelines-sidebar {
+    flex: 1;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.guidelines-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.guidelines-sidebar h3:not(:first-child) {
+    margin-top: 30px;
+}
+
+.guidelines-sidebar ul {
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+.guidelines-sidebar ul li {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.guidelines-sidebar p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustment for small viewport monitors */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .guidelines-sidebar {
+        order: -1; /* Pushes informational block to top on small screens */
+    }
+}
