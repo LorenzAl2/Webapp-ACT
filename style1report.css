@@ -1,0 +1,115 @@
+/* Base Page Settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+}
+
+/* Card Container */
+.report-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #1a4a75;
+    font-size: 26px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: #1a4a75;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1a4a75;
+    padding-bottom: 5px;
+}
+
+/* Common Table Resets */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Student Info Profile Section */
+.student-info td {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.student-info td.label {
+    font-weight: bold;
+    background-color: #ebf3f9;
+    width: 15%;
+}
+
+.student-info td:not(.label) {
+    width: 35%;
+}
+
+/* Academic Grades Grid */
+.grades th, .grades td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: center; /* Center-aligns all column values */
+}
+
+/* Target Subject Column left-align layout */
+.grades td:nth-child(2) {
+    text-align: left;
+}
+
+/* Header styling */
+.grades th {
+    background-color: #1a4a75;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Zebra Striping for table rows */
+.grades tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Bottom General Average Bar Styling */
+.grades tfoot .average-row th {
+    background-color: #163f64;
+    color: #ffffff;
+}
+
+.grades tfoot .average-row th[colspan="3"] {
+    text-align: center;
+}
+
+/* Remarks Formatting */
+.passed {
+    color: #2e7d32 !important; /* Bold green color matching standard grading software */
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.footer .disclaimer {
+    font-style: italic;
+    color: #888888;
+    margin-top: 4px;
+}
